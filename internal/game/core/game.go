@@ -1,4 +1,4 @@
-package core
+package physics
 
 import (
 	"ashab-k/github.com/internal/game/entity"
