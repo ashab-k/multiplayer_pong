@@ -46,7 +46,7 @@ func main() {
     
     // Set up window
     ebiten.SetWindowSize(windowWidth, windowHeight)
-    ebiten.SetWindowTitle("My Game")
+    ebiten.SetWindowTitle("Pong")
     
     // Start game loop
     if err := ebiten.RunGame(wrapper); err != nil {

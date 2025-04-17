@@ -2,6 +2,7 @@ package physics
 
 import (
 	"ashab-k/github.com/internal/game/entity"
+	"fmt"
 )
 
 func CheckPaddleBallCollision(ball *entity.Ball, paddle *entity.Paddle) bool {
@@ -29,6 +30,7 @@ func CheckPaddleBallCollision(ball *entity.Ball, paddle *entity.Paddle) bool {
 
 
 func handlePaddleBallResponse(ball *entity.Ball, paddle *entity.Paddle) {
+    fmt.Println("paddle ball collision")
     ball.Dx = -ball.Dx 
 
     paddleCenterY := paddle.Y + paddle.Height/2
