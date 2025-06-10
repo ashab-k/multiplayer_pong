@@ -7,6 +7,30 @@ type Ball struct {
     Radius  float32  
 }
 
+
+func (b *Ball) SetState(x, y, dx, dy float32) {
+	b.X = x
+	b.Y = y
+	b.Dx = dx
+	b.Dy = dy
+}
+
+func (b *Ball) SetPosition(x , y float32){
+    b.X = x;
+    b.Y = y;
+
+}
+
+func (b *Ball ) SetVelocity(Dx , Dy float32){
+    b.Dx = Dx;
+    b.Dy = Dy;
+}
+
+func (b *Ball) GetState() (x, y, dx, dy float32) {
+	return b.X, b.Y, b.Dx, b.Dy
+}
+
+
 func (b *Ball) Update(screenWidth, screenHeight float32) {
     b.X += b.Dx
     b.Y += b.Dy
